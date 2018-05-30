@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "bower": "1.5.2",
+    "gulp": "^3.9.1",
     "reveal-md": "0.0.20"
   }
 }
