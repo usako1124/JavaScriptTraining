@@ -119,8 +119,7 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
     it('8 番の要素の左右の幽霊要素をすべて除去する', function() {
 
       // ここにコードを記述してください。
-      $('.limegreen').child();
-      console.log($('.limegreen').child());
+      $('.limegreen-ghosts').remove();
 
 
       var $limegreen = $('.limegreen');
