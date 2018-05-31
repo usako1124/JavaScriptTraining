@@ -131,6 +131,7 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
       var $elementToAdd = $('<span>\uD83D\uDC2C</span>');
 
       // 上の $elementToAdd を追加するコードをここに記述してください。
+      $('.mediumturquoise').append($elementToAdd);
 
 
       var $mediumturquoise = $('.mediumturquoise');
@@ -143,6 +144,7 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
       var $elementToAdd = $('<span>\uD83D\uDC1F</span>');
 
       // 上の $elementToAdd を追加するコードをここに記述してください。
+      $('p').prepend($elementToAdd);
 
 
       var $p = $('p');
