@@ -11,6 +11,9 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
       // var element = document.querySelector('#firebrick');
       // var ghost = document.querySelector('.firebrick-ghost');
       // element.removeChild(ghost);
+      var element = document.querySelector('#firebrick');
+      var ghost = document.querySelector('.firebrick-ghost');
+      element.removeChild(ghost);
 
 
       var firebrick = document.getElementById('firebrick');
@@ -22,6 +25,9 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
     it('2 番の要素からインベーダー要素を除去する', function() {
 
       // ここにコードを記述してください。
+      var element = document.querySelector('#chocolate');
+      var invader = document.querySelector('.chocolate-space-invader');
+      element.removeChild(invader);
 
 
       var darkorange = document.getElementById('chocolate');
@@ -33,7 +39,10 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
     it('3 番の要素の左右の幽霊要素をすべて除去する', function() {
 
       // ここにコードを記述してください。
-
+      var element = document.querySelector('.mediumseagreen');
+      var ghosts = document.querySelectorAll('.mediumseagreen-ghosts');
+      element.removeChild(ghosts[0]);
+      element.removeChild(ghosts[1]);
 
       var darkorange = document.querySelector('.mediumseagreen');
       expect(darkorange).to.have.property('textContent', '3\uD83C\uDF3F');
@@ -45,6 +54,8 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
       elementToAdd.textContent = '\uD83D\uDC2C';
 
       // 上の elementToAdd を追加するコードをここに記述してください。
+      var element = document.querySelector('.turquoise');
+      element.appendChild(elementToAdd);
 
 
       var turquoise = document.querySelector('.turquoise');
@@ -60,6 +71,8 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
 
       // 上の elementToAdd を、5 番の青色の要素の最初に追加するコードを
       // ここに記述してください。
+      var element = document.querySelector('blockquote');
+      element.insertBefore(elementToAdd, element.firstChild);
 
 
       var blockquote = document.querySelector('blockquote');
@@ -79,6 +92,7 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
       // ここに以下のコードを記述してください。
       //
       // $('.brown-ghost').remove();
+      $('.brown-ghost').remove();
 
 
       var $brown = $('#brown');
@@ -90,6 +104,7 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
     it('7 番の要素からインベーダー要素を除去する', function() {
 
       // ここにコードを記述してください。
+      $('.darkorange-space-invader').remove();
 
 
       var $darkorange = $('#darkorange');
@@ -104,6 +119,8 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
     it('8 番の要素の左右の幽霊要素をすべて除去する', function() {
 
       // ここにコードを記述してください。
+      $('.limegreen').child();
+      console.log($('.limegreen').child());
 
 
       var $limegreen = $('.limegreen');
